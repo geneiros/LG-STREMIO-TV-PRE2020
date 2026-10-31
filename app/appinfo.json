@@ -1,0 +1,16 @@
+{
+  "id": "io.github.geneiros.stremiowrapper",
+  "version": "1.0.1",
+  "vendor": "geneiros",
+  "type": "web",
+  "main": "index.html",
+  "title": "Stremio Web",
+  "icon": "img/icon.png",
+  "largeIcon": "img/largeIcon.png",
+  "bgColor": "#1b1530",
+  "iconColor": "#4b2e8c",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": false,
+  "handlesRelaunch": false,
+  "transparent": false
+}

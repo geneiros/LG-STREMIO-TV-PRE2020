@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, height=1080, user-scalable=no">
+  <title>Stremio Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ecrã de arranque -->
+  <section id="splash" class="screen active">
+    <img class="logo" src="img/splash-logo.png" alt="">
+    <h1>Stremio Web</h1>
+    <p id="target" class="target"></p>
+    <p id="status" class="status">A preparar…</p>
+    <div id="warning" class="warning hidden"></div>
+    <div class="actions">
+      <button id="btn-open" class="btn focusable" data-action="open">Abrir agora</button>
+      <button id="btn-settings" class="btn focusable" data-action="settings">Definições</button>
+      <button id="btn-exit" class="btn focusable" data-action="exit">Sair</button>
+    </div>
+    <p class="hint">OK = abrir · ▲ ou botão <span class="red">vermelho</span> = definições · Back = sair</p>
+    <p id="diag" class="diag"></p>
+  </section>
+
+  <!-- Definições -->
+  <section id="settings" class="screen">
+    <h2>Definições</h2>
+    <p class="sub">Escolha o endereço a abrir no arranque.</p>
+    <div id="presets" class="list"></div>
+    <label class="field">
+      <span>Endereço personalizado</span>
+      <input id="custom-url" class="focusable" type="url" placeholder="https://…" spellcheck="false" autocomplete="off">
+    </label>
+    <div class="row">
+      <span>Abrir automaticamente após</span>
+      <button id="delay" class="btn small focusable" data-action="delay"></button>
+    </div>
+    <div class="actions">
+      <button class="btn focusable" data-action="save-open">Guardar e abrir</button>
+      <button class="btn focusable" data-action="save">Guardar</button>
+      <button class="btn focusable" data-action="back">Voltar</button>
+    </div>
+    <p class="hint">▲▼◀▶ navegar · OK escolher · Back voltar</p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

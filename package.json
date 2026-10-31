@@ -1,0 +1,15 @@
+{
+  "name": "lg-stremio-tv-pre2020",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Wrapper webOS (LG TV) para abrir o Stremio Web",
+  "scripts": {
+    "package": "ares-package app -o dist",
+    "install-tv": "ares-install --device tv dist/*.ipk",
+    "launch": "ares-launch --device tv io.github.geneiros.stremiowrapper",
+    "inspect": "ares-inspect --device tv --app io.github.geneiros.stremiowrapper --open"
+  },
+  "devDependencies": {
+    "@webos-tools/cli": "^3.2.6"
+  }
+}
