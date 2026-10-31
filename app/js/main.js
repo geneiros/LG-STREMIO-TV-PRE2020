@@ -18,6 +18,13 @@
       needsWasm: true
     },
     {
+      id: 'tv',
+      name: 'Stremio TV (tv.strem.io)',
+      url: 'https://tv.strem.io/',
+      note: 'Domínio da Stremio. Compatibilidade com TVs antigas por confirmar.',
+      needsWasm: false
+    },
+    {
       id: 'v4',
       name: 'Stremio Web v4 (legado)',
       url: 'https://app.strem.io/shell-v4.4/',
@@ -181,8 +188,8 @@
     }
     if (targetNeedsWasm() && !info.wasm) {
       problems.push('O motor web desta TV não suporta WebAssembly, que o Stremio Web atual ' +
-        'precisa para funcionar. É provável que fique em ecrã preto. Experimente a ' +
-        'interface legada (v4) nas Definições.');
+        'precisa para funcionar. É provável que fique em ecrã preto. Experimente o ' +
+        'Stremio TV ou a interface legada (v4) nas Definições.');
     }
 
     switchScreen('splash');

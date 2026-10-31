@@ -23,6 +23,8 @@ arranque que verifica a compatibilidade da TV e depois carrega o Stremio Web em 
 - **Verifica a ligação à Internet** antes de abrir.
 - **Vários endereços à escolha:**
   - Stremio Web atual (`https://web.stremio.com/`);
+  - Stremio TV (`https://tv.strem.io/`), num domínio da Stremio (ainda não
+    se confirmou se funciona em TVs antigas);
   - interface legada v4 (`https://app.strem.io/shell-v4.4/`), mais leve;
   - endereço personalizado (por exemplo uma instância própria do
     [stremio-web](https://github.com/Stremio/stremio-web)).
@@ -45,8 +47,8 @@ O motor web das TVs LG é:
 | 2020+     | 5.x+ | Chromium 68+ | ✅ |
 
 Numa TV anterior a 2020, o mais provável é o Stremio Web atual **não funcionar**.
-Nesse caso a app avisa e pode escolher, nas Definições, a interface legada v4 ou um
-endereço personalizado.
+Nesse caso a app avisa e pode escolher, nas Definições, o Stremio TV (`tv.strem.io`),
+a interface legada v4 ou um endereço personalizado.
 
 > O endereço da interface v4 é antigo e pode já não estar disponível. Abra-o num
 > computador antes de o usar na TV.
@@ -104,7 +106,7 @@ npm install
 npm run package
 ```
 
-O ficheiro fica em `dist/io.github.geneiros.stremiowrapper_1.0.0_all.ipk`.
+O ficheiro fica em `dist/io.github.geneiros.stremiowrapper_1.0.1_all.ipk`.
 
 ### 2a. Instalar com o Developer Mode (método oficial da LG)
 
@@ -143,7 +145,7 @@ npx ares-device-info --device tv
    Instale a app:
 
 ```bash
-npx ares-install --device tv dist/io.github.geneiros.stremiowrapper_1.0.0_all.ipk
+npx ares-install --device tv dist/io.github.geneiros.stremiowrapper_1.0.1_all.ipk
 ```
 
 6. A app **Stremio Web** aparece na lista de aplicações da TV. Também a pode abrir a partir do computador:

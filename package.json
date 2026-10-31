@@ -1,6 +1,6 @@
 {
   "name": "lg-stremio-tv-pre2020",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Wrapper webOS (LG TV) para abrir o Stremio Web",
   "scripts": {

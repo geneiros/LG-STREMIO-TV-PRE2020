@@ -104,3 +104,12 @@ h2 { font-size: 60px; margin: 0 0 8px; font-weight: 600; }
 }
 .field input.focused { -webkit-transform: none; transform: none; }
 .row .btn { margin-left: 24px; }
+
+/* Ecrã de definições mais compacto para caber em 1080 px. */
+#settings { padding-top: 50px; }
+#settings .sub { margin-bottom: 20px; }
+#settings .list .btn { padding: 12px 32px; margin-bottom: 12px; font-size: 30px; }
+#settings .field, #settings .row { margin-top: 16px; }
+#settings .field input { padding: 12px 20px; }
+#settings .actions { margin-top: 24px; }
+#settings .hint { margin-top: 24px; }
